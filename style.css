@@ -1,0 +1,81 @@
+body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 135%;
+        }
+        form{
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .wrapper{
+            width: 550px;
+            margin: 0 auto;
+        }
+        label{
+            width: 200px;
+            float: left;
+            position: relative;
+            top: 12px;
+        }
+        input{
+            width: 320px;
+            font-size: 25px;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            padding: 5px 5px 12px 5px;
+        }
+        .formelement{
+            margin-bottom: 15px;
+        }
+        #submitbutton{
+            width: 339px;
+            margin-left: 36%;
+            
+        }
+        .container{
+            background-color: white;
+            padding: 20px;
+        }
+        #validation{
+            margin: 32px;
+            margin-left: 44%;
+            display: none;
+            background-color: white;
+            color: black;
+            position: relative;
+            padding: 25px;
+            margin-top: 10px;
+        }
+        #validation p{
+            padding: 10px 35px;
+            font-size: 18px;
+        }
+        .valid{
+            color: green;
+        }
+        .valid:before{
+            position: relative;
+            left: -35px;
+        }
+        .invalid{
+            color: red;
+        }
+        .invalid::before{
+            position: relative;
+            left: -35px;
+        }
+        #errors{
+            color: red;
+            font-size: 90%;
+        }
+        #success{
+            color: green;
+            font-size: 90%;
+        }

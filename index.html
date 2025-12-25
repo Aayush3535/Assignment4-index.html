@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <form action="#">
+    <div id="success"></div>
+    <div id="errors"></div>
+    <div class="wrapper">
+    <div class="formelement">
+    <label for="Email">Email</label>
+    <input type="text" id="Email" name="Email">
+    </div>
+    
+    <div class="formelement">
+    <label for="phoneno">Phone Number</label>
+    <input type="text" id="phoneno" name="phoneno" maxlength="10">
+    </div>
+    
+    <div class="formelement">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+    </div>
+    
+    <div class="formelement">
+    <label for="confirmpassword">Confirm Password</label>
+    <input type="password" id="confirmpassword" name="confirmpassword">
+    </div>
+</div>
+<input id="submitbutton" type="submit"> 
+</div>
+<div id="validation">
+    <p id="length" class="invalid">At least 8 characters</p>
+    <p id="letter" class="invalid">Lowercase letter</p>
+    <p id="capital" class="invalid">uppercase letter</p>
+    <p id="number" class="invalid">A Number</p>
+</div>
+    </form>
+<script src="script.js"></script>
+</body>
+</html>
