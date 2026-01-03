@@ -8,7 +8,7 @@ function isEmail(email){
         if($("#Email").val() ==""){
             missingfeild+="<p>Email not field</p>";
         }
-        if($("#phoneon").val() ==""){
+        if($("#phoneno").val() ==""){
             missingfeild+="<p>Phone number not field</P>";
         }
         if($("#password").val() ==""){
@@ -82,3 +82,4 @@ function isEmail(email){
     }
     
     
+
