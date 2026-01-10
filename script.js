@@ -1,21 +1,21 @@
 var errormessage="";
-var missingfeild="";
+var missingfield="";
 function isEmail(email){
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     return regex.test(email);
 }
     $("#submitbutton").click(function(){
-        if($("#Email").val() ==""){
-            missingfeild+="<p>Email not field</p>";
+        if($("#email").val() == ""){
+            missingfield+="<p>Email not field</p>";
         }
-        if($("#phoneno").val() ==""){
-            missingfeild+="<p>Phone number not field</P>";
+        if($("#phoneno").val() == ""){
+            missingfield+="<p>Phone number not field</P>";
         }
-        if($("#password").val() ==""){
-            missingfeild+="<p>password not field</p>";
+        if($("#password").val() == ""){
+            missingfield+="<p>password not field</p>";
         }
 
-        if(isEmail($("#Email").val()) == false ){
+        if(isEmail($("#email").val()) == false ){
             errormessage +="<p>Email is not valid</p>";
         }
         if($.isNumeric($("#phoneno").val()) == false ){
@@ -27,15 +27,15 @@ function isEmail(email){
         if(errormessage == ""){
             $("#success").html("Submitted Successfully")
         }else{
-            $("#errors").html(errormessage + missingfeild);
+            $("#errors").html(errormessage + missingfield);
         }
     });
 
     var myInput = document.getElementById("password");
-    var length = document.getElementById("length");
     var letter = document.getElementById("letter");
     var capital = document.getElementById("capital");
     var number = document.getElementById("number");
+    var length = document.getElementById("length");
 
     myInput.onfocus = function(){
         document.getElementById("validation").style.display = "block";
@@ -82,4 +82,5 @@ function isEmail(email){
     }
     
     
+
 
